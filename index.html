@@ -6,9 +6,9 @@
     <title>Ashutosh Das - Portfolio</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px;
-            background-color: #f9f9f9;
+            background-color: #f0f4f7; /* Light grey background */
             color: #333;
             display: flex;
             justify-content: center;
@@ -16,28 +16,29 @@
 
         .portfolio-container {
             background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 3px 3px 15px #ddd;
+            border-radius: 12px;
+            box-shadow: 5px 5px 20px #ccc;
             padding: 30px;
-            width: 85%;
-            max-width: 900px;
+            width: 90%;
+            max-width: 1000px;
         }
 
         .profile-header {
             display: flex;
             align-items: center;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #eee;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e0e0e0;
         }
 
         .profile-image {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             overflow: hidden;
-            margin-right: 20px;
-            border: 3px solid #ccc;
+            margin-right: 25px;
+            border: 4px solid #ddd;
+            box-shadow: 2px 2px 5px #eee;
         }
 
         .profile-image img {
@@ -51,9 +52,9 @@
         }
 
         .name {
-            font-size: 2.2em;
+            font-size: 2.5em;
             font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
             color: #2c3e50;
         }
 
@@ -64,36 +65,50 @@
         }
 
         .details-list li {
-            font-size: 1em;
-            margin-bottom: 3px;
+            font-size: 1.1em;
+            margin-bottom: 5px;
             color: #555;
         }
 
         .highlight {
-            background-color: #f0f8ff; /* Light blue */
-            padding: 5px 10px;
-            border-radius: 5px;
+            background-color: #e6f7ff; /* Very light blue */
+            padding: 6px 12px;
+            border-radius: 8px;
             font-weight: bold;
             color: #3498db;
         }
 
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9; /* Light background for sections */
+            border: 1px solid #eee;
+        }
+
         .section-title {
-            font-size: 1.6em;
+            font-size: 1.8em;
             font-weight: bold;
-            margin-top: 25px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: #333;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
+            border-bottom: 3px solid #d4e6f1; /* Light blue border */
+            padding-bottom: 8px;
         }
 
-        .section-content {
-            margin-bottom: 20px;
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
         }
 
-        .skills-list {
-            list-style: disc;
-            padding-left: 20px;
+        .skill-item {
+            background-color: #e0f2f7; /* Very light cyan */
+            color: #00838f; /* Darker cyan */
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.95em;
+            border: 1px solid #b2ebf2;
         }
 
         .projects-list {
@@ -102,23 +117,25 @@
         }
 
         .project-item {
-            margin-bottom: 15px;
-            padding: 15px;
+            margin-bottom: 20px;
+            padding: 18px;
             border: 1px solid #e0e0e0;
-            border-radius: 5px;
+            border-radius: 8px;
             background-color: #fff;
+            box-shadow: 1px 1px 5px #f0f0f0;
         }
 
         .project-item h4 {
             margin-top: 0;
-            margin-bottom: 8px;
-            font-size: 1.15em;
+            margin-bottom: 10px;
+            font-size: 1.2em;
             font-weight: bold;
             color: #2c3e50;
         }
 
         .contact-info p {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
 
         .contact-info a {
@@ -136,7 +153,7 @@
     <div class="portfolio-container">
         <div class="profile-header">
             <div class="profile-image">
-                <img src="AshutoshDas.jpg" alt="Ashutosh Das" width="100" height="100">
+                <img src="AshutoshDas.jpg" alt="Ashutosh Das" width="120" height="120">
             </div>
             <div class="profile-info">
                 <h1 class="name">Ashutosh Das</h1>
@@ -149,53 +166,55 @@
             </div>
         </div>
 
-        <div class="section-title">About Me</div>
-        <div class="section-content">
-            <p>A dedicated and aspiring Electronics and Communication Engineering student with a strong academic record (CGPA: 7.45). I am passionate about understanding the intricacies of electronic systems and communication technologies. Eager to contribute to innovative projects and continuously learn and adapt to the evolving landscape of ECE.</p>
+        <div class="section">
+            <h2 class="section-title">About Me</h2>
+            <p>A dedicated and aspiring Electronics and Communication Engineering student with a strong academic record (CGPA: 7.45). I am driven by a curiosity to understand the inner workings of electronic systems and the power of communication technologies. My goal is to contribute meaningfully to innovative projects and continuously expand my knowledge in the dynamic field of ECE.</p>
         </div>
 
-        <div class="section-title">Key Interests</div>
-        <div class="section-content">
+        <div class="section">
+            <h2 class="section-title">Key Interests</h2>
             <ul>
-                <li>Embedded Systems Development</li>
-                <li>Wireless Communication Technologies</li>
-                <li>Digital Signal Processing</li>
-                <li>Exploring new advancements in IoT</li>
+                <li>Exploring the potential of Embedded Systems for real-world applications.</li>
+                <li>Delving into the intricacies of Wireless Communication protocols and advancements.</li>
+                <li>Applying Digital Signal Processing techniques to solve engineering challenges.</li>
+                <li>Staying updated with the latest trends and possibilities in the Internet of Things (IoT).</li>
             </ul>
         </div>
 
-        <div class="section-title">Skills</div>
-        <div class="section-content">
-            <ul class="skills-list">
-                <li>Proficient in C Programming</li>
-                <li>Experience with Python for scripting and data analysis</li>
-                <li>Solid understanding of Digital Electronics principles</li>
-                <li>Foundational knowledge of Analog Electronics</li>
-                <li>Familiarity with basic Communication Systems concepts</li>
-                <li>Strong Problem-Solving abilities</li>
-                <li>Effective Teamwork and collaboration skills</li>
-            </ul>
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">C Programming</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Digital Electronics</div>
+                <div class="skill-item">Analog Electronics</div>
+                <div class="skill-item">Communication Systems</div>
+                <div class="skill-item">Problem Solving</div>
+                <div class="skill-item">Teamwork</div>
+            </div>
         </div>
 
-        <div class="section-title">Projects</div>
-        <div class="section-content">
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
             <ul class="projects-list">
                 <li class="project-item">
                     <h4>Project 1 Title</h4>
-                    <p>Short description of Project 1. Briefly mention the objective, your role, and any key technologies or outcomes. <a href="#">View Details (if applicable)</a></p>
+                    <p>Short description of Project 1, highlighting the core objective, your specific contributions, and the technologies utilized. <a href="#">Learn More (if applicable)</a></p>
                 </li>
                 <li class="project-item">
                     <h4>Project 2 Title</h4>
-                    <p>Brief overview of Project 2. Highlight the main goal, your contribution, and what you learned from this project. <a href="#">View Details (if applicable)</a></p>
+                    <p>Brief overview of Project 2, emphasizing the key features, the challenges you addressed, and the outcomes achieved. <a href="#">See Details (if applicable)</a></p>
                 </li>
             </ul>
         </div>
 
-        <div class="section-title">Contact</div>
-        <div class="section-content contact-info">
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">linkedin.com/in/your-linkedin-profile</a></p>
-            <p>GitHub: <a href="https://github.com/your-github-profile" target="_blank">github.com/your-github-profile</a></p>
+        <div class="section">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">linkedin.com/in/your-linkedin-profile</a></p>
+                <p>GitHub: <a href="https://github.com/your-github-profile" target="_blank">github.com/your-github-profile</a></p>
+            </div>
         </div>
     </div>
 </body>
