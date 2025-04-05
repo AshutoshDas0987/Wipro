@@ -6,39 +6,41 @@
     <title>Ashutosh Das - Portfolio</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
-            background-color: #f0f4f7;
-            color: #333;
+            font-family: 'Merriweather', serif; /* More elegant font */
+            margin: 0; /* Remove default body margin */
+            background-color: #f8f9fa; /* Very light grey */
+            color: #495057; /* Darker grey text */
             display: flex;
             justify-content: center;
+            min-height: 100vh; /* Ensure full viewport height */
         }
 
         .portfolio-container {
             background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 5px 5px 20px #ccc;
-            padding: 30px;
-            width: 90%;
-            max-width: 1000px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.15); /* Softer, wider shadow */
+            padding: 50px; /* Increased padding */
+            width: 85%;
+            max-width: 1100px;
+            margin: 40px 0; /* Add top and bottom margin to the container */
         }
 
         .profile-header {
             display: flex;
             align-items: center;
-            padding-bottom: 25px;
-            margin-bottom: 25px;
-            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #dee2e6; /* Lighter border */
         }
 
         .profile-image {
-            width: 120px;
-            height: 120px;
+            width: 150px; /* Slightly larger image */
+            height: 150px;
             border-radius: 50%;
             overflow: hidden;
-            margin-right: 25px;
-            border: 4px solid #ddd;
-            box-shadow: 2px 2px 5px #eee;
+            margin-right: 30px;
+            border: 5px solid #e9ecef; /* Very light grey border */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
 
         .profile-image img {
@@ -52,10 +54,10 @@
         }
 
         .name {
-            font-size: 2.5em;
+            font-size: 3em; /* Larger name */
             font-weight: bold;
-            margin-bottom: 8px;
-            color: #2c3e50;
+            margin-bottom: 10px;
+            color: #343a40; /* Darker heading color */
         }
 
         .details-list {
@@ -65,54 +67,59 @@
         }
 
         .details-list li {
-            font-size: 1.1em;
-            margin-bottom: 5px;
-            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            color: #6c757d; /* Muted text color */
         }
 
         .highlight {
-            background-color: #e6f7ff;
-            padding: 6px 12px;
-            border-radius: 8px;
+            background-color: #e7f3ff; /* Very light blue */
+            padding: 8px 15px;
+            border-radius: 10px;
             font-weight: bold;
-            color: #3498db;
+            color: #007bff; /* Primary blue */
         }
 
         .section {
-            margin-bottom: 30px;
-            padding: 20px;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            border: 1px solid #eee;
+            margin-bottom: 40px; /* Increased section margin */
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff; /* Ensure white background for sections */
+            border: 1px solid #e9ecef;
         }
 
         .section-title {
-            font-size: 1.8em;
+            font-size: 2.2em; /* Larger section titles */
             font-weight: bold;
-            margin-bottom: 15px;
-            color: #333;
-            border-bottom: 3px solid #d4e6f1;
-            padding-bottom: 8px;
+            margin-bottom: 20px;
+            color: #343a40;
+            border-bottom: 2px solid #007bff; /* Primary blue border */
+            padding-bottom: 10px;
+            display: inline-block; /* Title takes only necessary width */
         }
 
         .section-content {
-            line-height: 1.6;
+            line-height: 1.7;
+            font-size: 1.1em;
+            color: #495057;
         }
 
         .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Wider skill boxes */
+            gap: 15px;
+            margin-top: 20px;
         }
 
         .skill-item {
-            background-color: #e0f2f7;
-            color: #00838f;
-            padding: 8px 15px;
-            border-radius: 20px;
+            background-color: #f8f9fa; /* Very light grey skill boxes */
+            color: #28a745; /* Success green */
+            padding: 12px 20px;
+            border-radius: 25px;
             text-align: center;
-            font-size: 0.95em;
-            border: 1px solid #b2ebf2;
+            font-size: 1em;
+            border: 1px solid #d1e7dd; /* Light green border */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
 
         .education-list, .projects-list, .certifications-list {
@@ -121,30 +128,31 @@
         }
 
         .education-item, .project-item, .certification-item {
-            margin-bottom: 15px;
-            padding: 18px;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 25px;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
             background-color: #fff;
-            box-shadow: 1px 1px 5px #f0f0f0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
         }
 
         .education-item h4, .project-item h4, .certification-item h4 {
             margin-top: 0;
-            margin-bottom: 8px;
-            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-size: 1.3em;
             font-weight: bold;
-            color: #2c3e50;
+            color: #343a40;
         }
 
         .project-item ul {
-            padding-left: 20px;
+            padding-left: 25px;
             list-style-type: disc;
+            margin-top: 10px;
         }
 
         .contact-info p {
-            margin-bottom: 10px;
-            font-size: 1.1em;
+            margin-bottom: 15px;
+            font-size: 1.15em;
         }
 
         .contact-info a {
@@ -156,20 +164,22 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+
+        /* Import a classy font from Google Fonts (optional, but recommended) */
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
     </style>
 </head>
 <body>
     <div class="portfolio-container">
         <div class="profile-header">
             <div class="profile-image">
-                <img src="AshutoshDas.jpg" alt="Ashutosh Das" width="120" height="120">
+                <img src="AshutoshDas.jpg" alt="Ashutosh Das" width="150" height="150">
             </div>
             <div class="profile-info">
                 <h1 class="name">Ashutosh Das</h1>
                 <ul class="details-list">
                     <li>Registration Number: 2141004162</li>
-                    <li>Branch: ECE</li>
-                    <li>Section: B</li>
+                    <li>Branch: Electronics and Communication Engineering</li>
                 </ul>
             </div>
         </div>
@@ -177,7 +187,7 @@
         <div class="section">
             <h2 class="section-title">Career Objective</h2>
             <div class="section-content">
-                <p>A final year consistent Electronics and Communication Engineering student with a passion for innovation and problem-solving, skilled in analysing, designing, and implementing electronic systems. Demonstrates a keen ability to evaluate complex problems and develop creative solutions using critical thinking and analytical skills. Actively engages in collaborative projects, exhibiting strong communication and teamwork abilities.</p>
+                <p>A final year consistent Electronics and Communication Engineering student with a passion for innovation and problem-solving, skilled in analysing, designing, and implementing electronic systems. Demonstrates a keen ability to evaluate complex problems and develop creative solutions using critical thinking and analytical skills. Actively engages in collaborative projects, exhibiting strong communication and teamwork abilities. Seeking opportunities to apply and further develop these skills in a challenging and rewarding environment.</p>
             </div>
         </div>
 
@@ -186,8 +196,8 @@
             <ul class="education-list">
                 <li class="education-item">
                     <h4>Siksha ’O’ Anusandhan University (ITER)</h4>
-                    <p>Bachelor of Technology in Electronics & Communication Engineering (CGPA 7.40)</p>
-                    <p>Bhubaneswar, India (Ongoing)</p>
+                    <p>Bachelor of Technology in Electronics & Communication Engineering (CGPA <span class="highlight">7.40</span>)</p>
+                    <p>Bhubaneswar, India (Expected Graduation: May 2025)</p>
                 </li>
                 <li class="education-item">
                     <h4>M.G.M English Medium School</h4>
@@ -208,25 +218,26 @@
                 <li class="project-item">
                     <h4>Bank Management Web Application</h4>
                     <ul>
-                        <li>Developed using Spring framework & SQL.</li>
-                        <li>Designed to simplify banking operations including registering account, transactions processing & customer data handling.</li>
-                        <li>Implemented password encoding using Spring security BCryptPasswordEncoder.</li>
+                        <li>Developed a comprehensive Bank Management Web Application using the robust Spring framework and SQL for data persistence.</li>
+                        <li>Designed the system architecture to streamline core banking operations, including secure user registration, efficient transaction processing, and comprehensive customer data handling.</li>
+                        <li>Implemented robust password encoding using Spring Security's BCryptPasswordEncoder to ensure the confidentiality of user credentials.</li>
                     </ul>
                 </li>
                 <li class="project-item">
                     <h4>Design and Implementation of a Secure Local Area Network (LAN) for a small business</h4>
-                    <p>Ernst & Young Global Delivery Services (EY GDS)</p>
+                    <p><span style="font-weight: bold; color: #546e7a;">Ernst & Young Global Delivery Services (EY GDS)</span></p>
                     <ul>
-                        <li>Designed and implemented a secure LAN using Cisco Packet Tracer, applying VLANs, firewalls, and access controls.</li>
-                        <li>Optimized network infrastructure with secure routing protocols to enhance confidentiality and availability.</li>
+                        <li>Architected and implemented a secure Local Area Network (LAN) for a small business environment utilizing Cisco Packet Tracer for simulation and design.</li>
+                        <li>Applied key security principles, including the segmentation of the network using VLANs, the implementation of firewall rules, and the configuration of access control lists to restrict unauthorized access.</li>
+                        <li>Optimized the network infrastructure by employing secure routing protocols, thereby enhancing both the confidentiality and availability of network resources.</li>
                     </ul>
                 </li>
                 <li class="project-item">
                     <h4>Develop an CNN model which can detect and recognize the object in the image</h4>
-                    <p>Larsen & Toubro (L&T)</p>
+                    <p><span style="font-weight: bold; color: #546e7a;">Larsen & Toubro (L&T)</span></p>
                     <ul>
-                        <li>Designed & trained CNN model for object detection & classification.</li>
-                        <li>Achieved robust object recognition with high accuracy using techniques like transfer learning & data augmentation.</li>
+                        <li>Conceptualized, designed, and trained a Convolutional Neural Network (CNN) model specifically for accurate object detection and classification within images.</li>
+                        <li>Achieved robust object recognition performance with a high degree of accuracy by leveraging advanced deep learning techniques such as transfer learning and strategic data augmentation.</li>
                     </ul>
                 </li>
             </ul>
@@ -241,6 +252,12 @@
                 <div class="skill-item">AWS</div>
                 <div class="skill-item">Communication Skills</div>
                 <div class="skill-item">Problem-Solving Skills</div>
+                <div class="skill-item">Spring Framework</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">Cisco Packet Tracer</div>
+                <div class="skill-item">CNN Model Development</div>
+                <div class="skill-item">Transfer Learning</div>
+                <div class="skill-item">Data Augmentation</div>
             </div>
         </div>
 
@@ -249,15 +266,15 @@
             <ul class="certifications-list">
                 <li class="certification-item">
                     <h4>Cyber Physical Systems for Industrial Applications</h4>
-                    <p>L&T EduTech</p>
+                    <p><span style="font-weight: bold; color: #546e7a;">L&T EduTech</span></p>
                 </li>
                 <li class="certification-item">
                     <h4>Artificial Intelligence and Edge Computing</h4>
-                    <p>L&T EduTech</p>
+                    <p><span style="font-weight: bold; color: #546e7a;">L&T EduTech</span></p>
                 </li>
                 <li class="certification-item">
                     <h4>Cybersecurity Training</h4>
-                    <p>EY GDS</p>
+                    <p><span style="font-weight: bold; color: #546e7a;">EY GDS</span></p>
                 </li>
                 <li class="certification-item">
                     <h4>AWS Academy Cloud Security Foundations</h4>
@@ -268,9 +285,9 @@
         <div class="section">
             <h2 class="section-title">Contact</h2>
             <div class="contact-info">
-                <p>Email: <a href="mailto:ashutoshdas0987@gmail.com">your.email@example.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/ashutoshdas1208" target="_blank">linkedin.com/in/your-linkedin-profile</a></p>
-                <p>GitHub: <a href="https://github.com/AshutoshDas0987" target="_blank">github.com/your-github-profile</a></p>
+                <p>Email: <a href="mailto:ashutoshdas0987@gmail.com">ashutoshdas0987@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ashutoshdas1208" target="_blank">linkedin.com/in/ashutoshdas1208</a></p>
+                <p>GitHub: <a href="https://github.com/AshutoshDas0987" target="_blank">github.com/AshutoshDas0987</a></p>
             </div>
         </div>
     </div>
