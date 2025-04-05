@@ -8,7 +8,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px;
-            background-color: #f0f4f7; /* Light grey background */
+            background-color: #f0f4f7;
             color: #333;
             display: flex;
             justify-content: center;
@@ -71,7 +71,7 @@
         }
 
         .highlight {
-            background-color: #e6f7ff; /* Very light blue */
+            background-color: #e6f7ff;
             padding: 6px 12px;
             border-radius: 8px;
             font-weight: bold;
@@ -82,7 +82,7 @@
             margin-bottom: 30px;
             padding: 20px;
             border-radius: 8px;
-            background-color: #f9f9f9; /* Light background for sections */
+            background-color: #f9f9f9;
             border: 1px solid #eee;
         }
 
@@ -91,8 +91,12 @@
             font-weight: bold;
             margin-bottom: 15px;
             color: #333;
-            border-bottom: 3px solid #d4e6f1; /* Light blue border */
+            border-bottom: 3px solid #d4e6f1;
             padding-bottom: 8px;
+        }
+
+        .section-content {
+            line-height: 1.6;
         }
 
         .skills-container {
@@ -102,8 +106,8 @@
         }
 
         .skill-item {
-            background-color: #e0f2f7; /* Very light cyan */
-            color: #00838f; /* Darker cyan */
+            background-color: #e0f2f7;
+            color: #00838f;
             padding: 8px 15px;
             border-radius: 20px;
             text-align: center;
@@ -111,13 +115,13 @@
             border: 1px solid #b2ebf2;
         }
 
-        .projects-list {
+        .education-list, .projects-list, .certifications-list {
             list-style: none;
             padding: 0;
         }
 
-        .project-item {
-            margin-bottom: 20px;
+        .education-item, .project-item, .certification-item {
+            margin-bottom: 15px;
             padding: 18px;
             border: 1px solid #e0e0e0;
             border-radius: 8px;
@@ -125,12 +129,17 @@
             box-shadow: 1px 1px 5px #f0f0f0;
         }
 
-        .project-item h4 {
+        .education-item h4, .project-item h4, .certification-item h4 {
             margin-top: 0;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             font-size: 1.2em;
             font-weight: bold;
             color: #2c3e50;
+        }
+
+        .project-item ul {
+            padding-left: 20px;
+            list-style-type: disc;
         }
 
         .contact-info p {
@@ -161,49 +170,100 @@
                     <li>Registration Number: 2141004162</li>
                     <li>Branch: ECE</li>
                     <li>Section: B</li>
-                    <li>CGPA: <span class="highlight">7.45</span></li>
+                    <li>CGPA: <span class="highlight">7.3</span> (as of current information)</li>
                 </ul>
             </div>
         </div>
 
         <div class="section">
-            <h2 class="section-title">About Me</h2>
-            <p>A dedicated and aspiring Electronics and Communication Engineering student with a strong academic record (CGPA: 7.45). I am driven by a curiosity to understand the inner workings of electronic systems and the power of communication technologies. My goal is to contribute meaningfully to innovative projects and continuously expand my knowledge in the dynamic field of ECE.</p>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Key Interests</h2>
-            <ul>
-                <li>Exploring the potential of Embedded Systems for real-world applications.</li>
-                <li>Delving into the intricacies of Wireless Communication protocols and advancements.</li>
-                <li>Applying Digital Signal Processing techniques to solve engineering challenges.</li>
-                <li>Staying updated with the latest trends and possibilities in the Internet of Things (IoT).</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-container">
-                <div class="skill-item">C Programming</div>
-                <div class="skill-item">Python</div>
-                <div class="skill-item">Digital Electronics</div>
-                <div class="skill-item">Analog Electronics</div>
-                <div class="skill-item">Communication Systems</div>
-                <div class="skill-item">Problem Solving</div>
-                <div class="skill-item">Teamwork</div>
+            <h2 class="section-title">Career Objective</h2>
+            <div class="section-content">
+                <p>A final year consistent Electronics and Communication Engineering student with a passion for innovation and problem-solving, skilled in analysing, designing, and implementing electronic systems. Demonstrates a keen ability to evaluate complex problems and develop creative solutions using critical thinking and analytical skills. Actively engages in collaborative projects, exhibiting strong communication and teamwork abilities.</p>
             </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <ul class="education-list">
+                <li class="education-item">
+                    <h4>Siksha ’O’ Anusandhan University (ITER)</h4>
+                    <p>Bachelor of Technology in Electronics & Communication Engineering (CGPA 7.3)</p>
+                    <p>Bhubaneswar, India (Ongoing)</p>
+                </li>
+                <li class="education-item">
+                    <h4>M.G.M English Medium School</h4>
+                    <p>Senior Secondary Education (Secured 75.5%)</p>
+                    <p>Rourkela, India (2021)</p>
+                </li>
+                <li class="education-item">
+                    <h4>M.G.M English Medium School</h4>
+                    <p>Secondary Education (Secured 80.5%)</p>
+                    <p>Rourkela, India (2019)</p>
+                </li>
+            </ul>
         </div>
 
         <div class="section">
             <h2 class="section-title">Projects</h2>
             <ul class="projects-list">
                 <li class="project-item">
-                    <h4>Project 1 Title</h4>
-                    <p>Short description of Project 1, highlighting the core objective, your specific contributions, and the technologies utilized. <a href="#">Learn More (if applicable)</a></p>
+                    <h4>Bank Management Web Application</h4>
+                    <ul>
+                        <li>Developed using Spring framework & SQL.</li>
+                        <li>Designed to simplify banking operations including registering account, transactions processing & customer data handling.</li>
+                        <li>Implemented password encoding using Spring security BCryptPasswordEncoder.</li>
+                    </ul>
                 </li>
                 <li class="project-item">
-                    <h4>Project 2 Title</h4>
-                    <p>Brief overview of Project 2, emphasizing the key features, the challenges you addressed, and the outcomes achieved. <a href="#">See Details (if applicable)</a></p>
+                    <h4>Design and Implementation of a Secure Local Area Network (LAN) for a small business</h4>
+                    <p>Ernst & Young Global Delivery Services (EY GDS)</p>
+                    <ul>
+                        <li>Designed and implemented a secure LAN using Cisco Packet Tracer, applying VLANs, firewalls, and access controls.</li>
+                        <li>Optimized network infrastructure with secure routing protocols to enhance confidentiality and availability.</li>
+                    </ul>
+                </li>
+                <li class="project-item">
+                    <h4>Develop an CNN model which can detect and recognize the object in the image</h4>
+                    <p>Larsen & Toubro (L&T)</p>
+                    <ul>
+                        <li>Designed & trained CNN model for object detection & classification.</li>
+                        <li>Achieved robust object recognition with high accuracy using techniques like transfer learning & data augmentation.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">Java</div>
+                <div class="skill-item">C</div>
+                <div class="skill-item">C++</div>
+                <div class="skill-item">Java Spring</div>
+                <div class="skill-item">Data Structures and Algorithms</div>
+                <div class="skill-item">AWS</div>
+                <div class="skill-item">Communication Skills</div>
+                <div class="skill-item">Problem-Solving Skills</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Industrial Trainings / Certifications</h2>
+            <ul class="certifications-list">
+                <li class="certification-item">
+                    <h4>Cyber Physical Systems for Industrial Applications</h4>
+                    <p>L&T EduTech</p>
+                </li>
+                <li class="certification-item">
+                    <h4>Artificial Intelligence and Edge Computing</h4>
+                    <p>L&T EduTech</p>
+                </li>
+                <li class="certification-item">
+                    <h4>Cybersecurity Training</h4>
+                    <p>EY GDS</p>
+                </li>
+                <li class="certification-item">
+                    <h4>AWS Academy Cloud Security Foundations</h4>
                 </li>
             </ul>
         </div>
